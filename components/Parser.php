@@ -12,8 +12,6 @@ class Parser
     {
         libxml_use_internal_errors(true);
 
-        echo $page;
-
         $document = new \DOMDocument('1.0', 'UTF-8');
         $document->loadHTML($page);
         $domXPath = new \DOMXPath($document);
